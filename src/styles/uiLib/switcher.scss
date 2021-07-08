@@ -14,14 +14,14 @@
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        transform: translate(-7px, -5px);
+        transform: translate(-7px, -4px);
     }
     &.active {
         background-color: $primaryBlue100;
         border-color: $primaryBlue100;
         &:after {
             background-color: $secondaryBlue100;
-            transform: translate(19px, -5px);
+            transform: translate(25px, -4px);
         }
     }
 }
