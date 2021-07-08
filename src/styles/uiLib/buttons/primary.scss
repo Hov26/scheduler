@@ -1,0 +1,10 @@
+@import "../colors.scss";
+.btn {
+    &.primary {
+        background-color: $primaryBlue100;
+        color: $white;
+        &:hover {
+            background-color: $primaryBlue200;
+        }
+    }
+}

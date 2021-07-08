@@ -1,0 +1,44 @@
+@import "mixins.scss";
+.notification-wrap {
+    padding: 1px;
+    width: 95%;
+    max-width: 320px;
+    border-radius: 30px;
+    @include flex(space-between, center);
+    &.blue {
+        @include bg-opacity($primaryBlue100, 0.4);
+        .icon-container {
+            background-color: $primaryBlue100;
+            background-image: url('../assets/notification.svg');
+        }
+    }
+    &.green {
+        @include bg-opacity($green,
+        0.4);
+        .icon-container {
+            background-color: $green;
+            background-image: url('../assets/done.svg');
+        }
+    }
+    &.red {
+        @include bg-opacity($red,
+        0.4);
+        .icon-container {
+            background-color: $red;
+            background-image: url('../assets/warning.svg');
+        }
+    }
+    .icon-container {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-size: initial;
+    }
+    .close-btn {
+        padding-right: 24px;
+        font-size: 0;
+    }
+}

@@ -1,0 +1,83 @@
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*
+t means 'title'
+*/
+
+.t-50 {
+    font-size: 50px;
+}
+
+.t-38 {
+    font-size: 38px;
+}
+
+.t-28 {
+    font-size: 28px;
+}
+
+.t-21 {
+    font-size: 21px;
+}
+
+.t-12 {
+    font-size: 12px;
+}
+
+
+/*
+p means 'paragraph'
+*/
+
+.p-16 {
+    font-size: 16px;
+}
+
+.p-14 {
+    font-size: 14px;
+}
+
+.p-12 {
+    font-size: 12px;
+}
+
+
+/*
+Font weights
+*/
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-700 {
+    font-weight: 400;
+}
+
+
+/*
+Colors classnames
+*/
+
+.gray100 {
+    color: $gray100;
+}
+
+.gray200 {
+    color: $gray200;
+}
+
+.gray300 {
+    color: $gray300;
+}
+
+.gray400 {
+    color: $gray400;
+}
+
+.gray500 {
+    color: $gray500;
+}

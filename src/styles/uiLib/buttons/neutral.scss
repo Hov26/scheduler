@@ -1,0 +1,10 @@
+@import "../colors.scss";
+.btn {
+    &.neutral {
+        background-color: $gray300;
+        color: $white;
+        &:hover {
+            background-color: $gray400;
+        }
+    }
+}

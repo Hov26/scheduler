@@ -1,0 +1,16 @@
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 45px;
+    border-radius: 50px;
+    transition: all 0.1s linear;
+    font-weight: 500;
+    &.w-icon {
+        display: flex;
+    }
+    &[data-disabled='true'] {
+        opacity: 0.3;
+    }
+}

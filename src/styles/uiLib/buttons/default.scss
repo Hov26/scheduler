@@ -1,0 +1,11 @@
+@import "../colors.scss";
+.btn {
+    &.default {
+        background-color: $white;
+        color: $gray400;
+        box-shadow: inset 0px 0px 0px 1px $gray400;
+        &:hover {
+            background-color: $gray200;
+        }
+    }
+}
