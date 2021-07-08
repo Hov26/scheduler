@@ -9,8 +9,6 @@
 @import "uiLib/buttons/neutral.scss";
 @import "uiLib/buttons/primary.scss";
 @import "uiLib/buttons/secondary.scss";
-@import "uiLib/form.scss";
-@import "notification.scss";
 .header {
     background-color: $secondaryBlue100;
     min-height: 146px;
@@ -77,24 +75,25 @@
 }
 
 .content {
-    // background-image: url('../assets/bg.jpeg');
+    background-image: url('../assets/bg.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 80vh;
     position: relative;
     z-index: 10;
-    @include flex(center, center);
+    @include flex(center,
+    center);
     flex-direction: column;
-    // &:after {
-    //     content: '';
-    //     width: 100%;
-    //     height: 30vh;
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 0;
-    //     z-index: 1;
-    //     background: linear-gradient(360deg, rgba(255, 255, 255, 0.75) 54.21%, rgba(255, 255, 255, 0) 99.13%);
-    // }
+    &:after {
+        content: '';
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background: linear-gradient(360deg, rgba(255, 255, 255, 0.75) 54.21%, rgba(255, 255, 255, 0) 99.13%);
+    }
     .notification-wrap {
         margin: 16px auto 70px auto;
     }
@@ -103,65 +102,13 @@
     }
     .calendar-form-wrapper {
         margin-top: 70px;
-        @include flex(center, center)
+        @include flex(center,
+        center)
     }
     .calendar-time-wrapper {
         background: $white;
         box-shadow: 4px 4px 17px rgba(0, 0, 0, 0.45);
         padding: 32px 40px;
-    }
-    .calendar-wrapper {
-        width: 100%;
-        max-width: 294px;
-    }
-    .calendar-head {
-        @include flex(center, center);
-        margin-bottom: 26px;
-        .month {
-            text-transform: uppercase;
-            padding: 0 30px;
-        }
-    }
-    .calendar-ul {
-        flex-wrap: wrap;
-        &.dates {
-            .calendar-li {
-                color: $gray300;
-                &.disabled {
-                    color: $gray200;
-                }
-            }
-        }
-    }
-    .calendar-li {
-        min-width: 42px;
-        padding: 8px 5px;
-    }
-    .time-wrapper {
-        margin-left: 60px;
-    }
-    .time-head {
-        .arrow {
-            margin-left: 8px;
-            width: 14px;
-        }
-    }
-    .time-subhead {
-        margin: 6px 0 16px 0;
-    }
-    .time-btn {
-        width: 100%;
-        background-color: $gray300;
-        color: $white;
-        height: 42px;
-        line-height: 42px;
-        margin-bottom: 8px;
-        border-radius: 30px;
-        transition: all 0.1s linear;
-        &.active,
-        &:hover {
-            background-color: $primaryBlue100;
-        }
     }
     .form-wrapper {
         width: 100%;
@@ -179,21 +126,19 @@
             margin-top: 32px;
         }
     }
-    .textarea {
-        padding: 18px 23px;
-        height: 140px;
-    }
     .footer {
         margin: 100px 0 80px 0;
     }
     .footer-head {
-        @include flex(center, center);
+        @include flex(center,
+        center);
         .switcher {
             margin-right: 14px;
         }
     }
     .buttons-wrapper {
-        @include flex(center, center);
+        @include flex(center,
+        center);
         margin-top: 36px;
         .btn {
             margin: 0 5px;

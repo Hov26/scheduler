@@ -1,0 +1,30 @@
+@import '../../styles/uiLib/colors.scss';
+.time-wrapper {
+    margin-left: 60px;
+}
+
+.time-head {
+    .arrow {
+        margin-left: 8px;
+        width: 14px;
+    }
+}
+
+.time-subhead {
+    margin: 6px 0 16px 0;
+}
+
+.time-btn {
+    width: 100%;
+    background-color: $gray300;
+    color: $white;
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 8px;
+    border-radius: 30px;
+    transition: all 0.1s linear;
+    &.active,
+    &:hover {
+        background-color: $primaryBlue100;
+    }
+}

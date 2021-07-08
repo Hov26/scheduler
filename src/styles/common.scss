@@ -36,3 +36,14 @@ html {
         transform: rotate(90deg);
     }
 }
+
+.form-group {
+    position: relative;
+    .status-message {
+        position: absolute;
+        bottom: -20px;
+        font-size: 12px;
+        font-weight: 400;
+        color: currentColor;
+    }
+}

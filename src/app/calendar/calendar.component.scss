@@ -1,0 +1,32 @@
+@import '../../styles/uiLib/colors.scss';
+@import '../../styles/mixins.scss';
+.calendar-component {
+    width: 100%;
+    max-width: 294px;
+}
+
+.calendar-head {
+    @include flex(center, center);
+    margin-bottom: 26px;
+    .month {
+        text-transform: uppercase;
+        padding: 0 30px;
+    }
+}
+
+.calendar-ul {
+    flex-wrap: wrap;
+    &.dates {
+        .calendar-li {
+            color: $gray300;
+            &.disabled {
+                color: $gray200;
+            }
+        }
+    }
+}
+
+.calendar-li {
+    min-width: 42px;
+    padding: 8px 5px;
+}
