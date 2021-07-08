@@ -1,47 +1,137 @@
-<header class="header d-flex">
-    <div class="container">
-        <figure class="user-figure mobile">
-            <img class="user-avatar" src="../assets/user.png" alt="User avatar">
-        </figure>
-        <a href="#" class="logo">
-            <img src="../assets/logo-main.svg" alt="Brand logo" class="lg-screen">
-            <img src="../assets/logo-mini.svg" alt="Brand logo" class="sm-screen">
-        </a>
-        <div class="user-menu">
-            <a href="#" class="user-wrap desktop">
-                <figure class="user-figure">
-                    <img class="user-avatar" src="../assets/user.png" alt="User avatar">
-                </figure>
-                <p class="user-name white">Ton Hanchai</p>
+<main>
+    <header class="header d-flex">
+        <div class="container">
+            <figure class="user-figure mobile">
+                <img class="user-avatar" src="../assets/user.png" alt="User avatar">
+            </figure>
+            <a href="#" class="logo">
+                <img src="../assets/logo-main.svg" alt="Brand logo" class="lg-screen">
+                <img src="../assets/logo-mini.svg" alt="Brand logo" class="sm-screen">
             </a>
-            <ul class="menu-ul d-flex">
-                <li class="menu-li calendar-li">
-                    <a href="#" class="menu-li-a">
-                        <img src="../assets/calendar.svg" alt="Calendar">
-                    </a>
-                </li>
-                <li class="menu-li message-li">
-                    <a href="#" class="menu-li-a">
-                        <img src="../assets/message-notification.svg" alt="Message">
-                    </a>
-                </li>
-                <li class="menu-li locked-li">
-                    <a href="#" class="menu-li-a">
-                        <img src="../assets/locked.svg" alt="Locked">
-                    </a>
-                </li>
-            </ul>
+            <div class="user-menu">
+                <a href="#" class="user-wrap desktop">
+                    <figure class="user-figure">
+                        <img class="user-avatar" src="../assets/user.png" alt="User avatar">
+                    </figure>
+                    <p class="user-name white">Ton Hanchai</p>
+                </a>
+                <ul class="menu-ul d-flex">
+                    <li class="menu-li calendar-li">
+                        <a href="#" class="menu-li-a">
+                            <img src="../assets/calendar.svg" alt="Calendar">
+                        </a>
+                    </li>
+                    <li class="menu-li message-li">
+                        <a href="#" class="menu-li-a">
+                            <img src="../assets/message-notification.svg" alt="Message">
+                        </a>
+                    </li>
+                    <li class="menu-li locked-li">
+                        <a href="#" class="menu-li-a">
+                            <img src="../assets/locked.svg" alt="Locked">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
+    <section class="content">
+        <div class="container">
+            <div class="notification-wrap blue">
+                <div class="icon-container"></div>
+                <p class="p-16 fw-400">You have 2 messages waiting!</p>
+                <button class="close-btn">
+									<img src="../assets/close.svg" alt="Close" class="close">
+								</button>
+            </div>
+            <h1 class="fz38 gray400 fw700 text-center main-title">Welcome back, Ton!</h1>
+            <h2 class="fz24 gray400 fw400 text-center">Please choose a date, time, and message.</h2>
+        </div>
 
-
-
-
-<!-- <div class="notification-wrap">
-    <div class="icon-container"></div>
-    <p class="p-16 fw-400">You have 2 messages waiting!</p>
-    <button class="close-btn">
-			<img src="../assets/close.svg" alt="Close" class="close">
-		</button>
-</div> -->
+        <div class="calendar-form-wrapper">
+            <div class="calendar-time-wrapper d-flex">
+                <div class="calendar-wrapper">
+                    <div class="calendar-head">
+                        <button class="arrow arrow-left"></button>
+                        <p class="fz21 fw-700 gray400 month">October</p>
+                        <button class="arrow arrow-right"></button>
+                    </div>
+                    <div class="calendar-body text-center">
+                        <ul class="calendar-ul days fz12 fw-700 gray400 d-flex">
+                            <li class="calendar-li">SUN</li>
+                            <li class="calendar-li">MON</li>
+                            <li class="calendar-li">TUE</li>
+                            <li class="calendar-li">WED</li>
+                            <li class="calendar-li">THU</li>
+                            <li class="calendar-li">FRI</li>
+                            <li class="calendar-li">SAT</li>
+                        </ul>
+                        <ul class="calendar-ul dates fz16 fw400 d-flex">
+                            <li class="calendar-li disabled">21</li>
+                            <li class="calendar-li disabled">22</li>
+                            <li class="calendar-li disabled">23</li>
+                            <li class="calendar-li disabled">24</li>
+                            <li class="calendar-li disabled">25</li>
+                            <li class="calendar-li disabled">26</li>
+                            <li class="calendar-li disabled">27</li>
+                            <li class="calendar-li disabled">28</li>
+                            <li class="calendar-li disabled">29</li>
+                            <li class="calendar-li disabled">30</li>
+                            <li class="calendar-li">1</li>
+                            <li class="calendar-li">2</li>
+                            <li class="calendar-li">3</li>
+                            <li class="calendar-li">4</li>
+                            <li class="calendar-li">5</li>
+                            <li class="calendar-li">6</li>
+                            <li class="calendar-li">7</li>
+                            <li class="calendar-li">8</li>
+                            <li class="calendar-li">9</li>
+                            <li class="calendar-li">10</li>
+                            <li class="calendar-li">11</li>
+                            <li class="calendar-li">12</li>
+                            <li class="calendar-li">14</li>
+                            <li class="calendar-li">14</li>
+                            <li class="calendar-li">15</li>
+                            <li class="calendar-li">16</li>
+                            <li class="calendar-li">17</li>
+                            <li class="calendar-li">18</li>
+                            <li class="calendar-li">19</li>
+                            <li class="calendar-li">20</li>
+                            <li class="calendar-li">21</li>
+                            <li class="calendar-li">22</li>
+                            <li class="calendar-li">23</li>
+                            <li class="calendar-li">24</li>
+                            <li class="calendar-li">25</li>
+                            <li class="calendar-li">26</li>
+                            <li class="calendar-li">27</li>
+                            <li class="calendar-li">28</li>
+                            <li class="calendar-li">29</li>
+                            <li class="calendar-li">30</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="time-wrapper text-center">
+                    <div class="time-head d-flex">
+                        <p class="fz21 fw700 fw400">Pacific (PST) Time</p>
+                        <div class="arrow arrow-bottom"></div>
+                    </div>
+                    <p class="time-subhead fz16 fw400 gray300">Pacific (PST) Time</p>
+                    <ul class="time-body-ul">
+                        <li class="time-body-li">
+                            <button class="time-btn">10:00 am</button>
+                        </li>
+                        <li class="time-body-li">
+                            <button class="time-btn active">10:30 am</button>
+                        </li>
+                        <li class="time-body-li">
+                            <button class="time-btn">11:00 am</button>
+                        </li>
+                        <li class="time-body-li">
+                            <button class="time-btn">11:30 am</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,46 +1,36 @@
-html {
-    font-family: 'Lato', sans-serif;
-}
-
-
 /*
-t means 'title'
+fz means 'font-size'
 */
 
-.t-50 {
+.fz50 {
     font-size: 50px;
 }
 
-.t-38 {
+.fz38 {
     font-size: 38px;
 }
 
-.t-28 {
+.fz28 {
     font-size: 28px;
 }
 
-.t-21 {
+.fz21 {
     font-size: 21px;
 }
 
-.t-12 {
+.fz12 {
     font-size: 12px;
 }
 
-
-/*
-p means 'paragraph'
-*/
-
-.p-16 {
+.fz16 {
     font-size: 16px;
 }
 
-.p-14 {
+.fz14 {
     font-size: 14px;
 }
 
-.p-12 {
+.fz12 {
     font-size: 12px;
 }
 
@@ -54,7 +44,7 @@ Font weights
 }
 
 .fw-700 {
-    font-weight: 400;
+    font-weight: 700;
 }
 
 
@@ -85,8 +75,3 @@ Colors classnames
 .gray500 {
     color: $gray500;
 }
-
-
-/*
-Background colors
-*/

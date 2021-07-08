@@ -1,3 +1,7 @@
+html {
+    font-family: 'Lato', sans-serif;
+}
+
 .container {
     width: 95%;
     max-width: 1200px;
@@ -15,5 +19,20 @@
     display: block;
     @media only screen and (max-width: 776px) {
         display: none;
+    }
+}
+
+.arrow {
+    width: 16px;
+    height: 16px;
+    background-image: url('../assets/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: center;
+    &.arrow-left {
+        transform: rotate(-180deg);
+    }
+    &.arrow-bottom {
+        transform: rotate(90deg);
     }
 }
