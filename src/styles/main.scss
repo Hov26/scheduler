@@ -1,6 +1,7 @@
 @import "reset.scss";
 @import "mixins.scss";
 @import "utils.scss";
+@import "common.scss";
 @import "uiLib/colors.scss";
 @import "uiLib/typography.scss";
 @import "uiLib/buttons/buttons-main.scss";
@@ -11,3 +12,67 @@
 @import "uiLib/form.scss";
 @import "uiLib/switcher.scss";
 @import "notification.scss";
+.header {
+    background-color: $secondaryBlue100;
+    min-height: 146px;
+    .container {
+        @include flex(space-between, flex-start)
+    }
+    .logo {
+        align-self: center;
+    }
+    .user-wrap {
+        @include flex(space-between, center)
+    }
+    .user-figure {
+        width: 48px;
+        height: 48px;
+        background-color: $gray200;
+        border-radius: 50%;
+        margin-right: 10px;
+        @include flex(center, center);
+        &.mobile {
+            display: none;
+        }
+    }
+    .user-menu {
+        align-self: flex-end;
+    }
+    .menu-ul {
+        margin: 28px 0 10px 10px;
+    }
+    .menu-li {
+        &+.menu-li {
+            margin-left: 30px;
+        }
+    }
+    @media only screen and (max-width: 776px) {
+        min-height: 60px;
+        .container {
+            align-items: center;
+        }
+        .user-wrap,
+        .locked-li {
+            display: none;
+        }
+        .user-figure {
+            width: 32px;
+            height: 32px;
+            img {
+                width: 80%;
+            }
+            &.mobile {
+                display: flex;
+            }
+        }
+        .user-menu {
+            align-self: center;
+        }
+        .menu-ul {
+            margin: 0;
+        }
+        .menu-li+.menu-li {
+            margin-left: 10px;
+        }
+    }
+}

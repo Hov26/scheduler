@@ -1,13 +1,36 @@
-<header>
+<header class="header d-flex">
     <div class="container">
+        <figure class="user-figure mobile">
+            <img class="user-avatar" src="../assets/user.png" alt="User avatar">
+        </figure>
         <a href="#" class="logo">
-            <img src="../assets/logo-main.svg" alt="Brand logo">
+            <img src="../assets/logo-main.svg" alt="Brand logo" class="lg-screen">
+            <img src="../assets/logo-mini.svg" alt="Brand logo" class="sm-screen">
         </a>
         <div class="user-menu">
-            <div class="user-wrap">
-                <img class="user-avatar" src="" alt="User avatar">
-                <p class="user-name">Ton Hanchai</p>
-            </div>
+            <a href="#" class="user-wrap desktop">
+                <figure class="user-figure">
+                    <img class="user-avatar" src="../assets/user.png" alt="User avatar">
+                </figure>
+                <p class="user-name white">Ton Hanchai</p>
+            </a>
+            <ul class="menu-ul d-flex">
+                <li class="menu-li calendar-li">
+                    <a href="#" class="menu-li-a">
+                        <img src="../assets/calendar.svg" alt="Calendar">
+                    </a>
+                </li>
+                <li class="menu-li message-li">
+                    <a href="#" class="menu-li-a">
+                        <img src="../assets/message-notification.svg" alt="Message">
+                    </a>
+                </li>
+                <li class="menu-li locked-li">
+                    <a href="#" class="menu-li-a">
+                        <img src="../assets/locked.svg" alt="Locked">
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </header>

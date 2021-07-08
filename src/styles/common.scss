@@ -1,0 +1,19 @@
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sm-screen {
+    display: none;
+    @media only screen and (max-width: 776px) {
+        display: block;
+    }
+}
+
+.lg-screen {
+    display: block;
+    @media only screen and (max-width: 776px) {
+        display: none;
+    }
+}

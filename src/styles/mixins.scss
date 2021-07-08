@@ -4,7 +4,7 @@
     background: rgba($color, $opacity);
 }
 
-@mixin flex($justifyContent, $alignItems) {
+@mixin flex($justifyContent, $alignItems: flex-start) {
     display: flex;
     justify-content: $justifyContent;
     align-items: $alignItems;
