@@ -1,0 +1,114 @@
+@import "mixins.scss";
+@import "uiLib/colors.scss";
+.content {
+    background-image: url('../assets/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+    @include flex(column,
+    center,
+    center);
+    &:after {
+        @include whiteOverlay(45vh,
+        -1);
+    }
+    .notification-wrap {
+        margin: 16px auto 70px auto;
+    }
+    .main-title {
+        margin-bottom: 24px;
+    }
+    .calendar-form-wrapper {
+        margin-top: 70px;
+        @include flex(row,
+        center,
+        stretch)
+    }
+    .calendar-time-wrapper {
+        width: 70%;
+        max-width: 620px;
+        background: $white;
+        box-shadow: 4px 4px 17px rgba(0, 0, 0, 0.45);
+        padding: 32px 40px;
+        position: relative;
+        &:after {
+            @include whiteOverlay(100px,
+            1);
+        }
+        &:hover {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .form-wrapper {
+        width: 40%;
+        max-width: 490px;
+        margin-left: 3vw;
+        box-shadow: 4px 4px 17px rgba(0, 0, 0, 0.45);
+        background-color: $secondaryBlue100;
+        padding: 32px;
+    }
+    .label {
+        display: block;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        &[for='message'] {
+            margin-top: 32px;
+        }
+    }
+    .footer {
+        margin: 100px 0 80px 0;
+    }
+    .footer-head {
+        @include flex(row,
+        center,
+        center);
+        .switcher {
+            margin-right: 14px;
+        }
+    }
+    .buttons-wrapper {
+        @include flex(row,
+        center,
+        center);
+        margin-top: 36px;
+        .btn {
+            margin: 0 5px;
+        }
+    }
+    @media only screen and (max-width: 1200px) {
+        .calendar-time-wrapper {
+            padding: 32px 22px;
+        }
+        .form-wrapper {
+            width: 34%;
+            padding: 32px 22px;
+        }
+    }
+    @media only screen and (max-width: 992px) {
+        .calendar-form-wrapper {
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        .calendar-time-wrapper,
+        .form-wrapper {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-wrapper {
+            margin-top: 30px;
+        }
+        .footer {
+            margin: 30px 0;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .calendar-time-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

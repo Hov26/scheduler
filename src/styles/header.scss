@@ -1,0 +1,66 @@
+@import "mixins.scss";
+@import "uiLib/colors.scss";
+.header {
+    background-color: $secondaryBlue100;
+    min-height: 146px;
+    .container {
+        @include flex(row, space-between, flex-start)
+    }
+    .logo {
+        align-self: center;
+    }
+    .user-wrap {
+        @include flex(row, space-between, center)
+    }
+    .user-figure {
+        width: 48px;
+        height: 48px;
+        background-color: $gray200;
+        border-radius: 50%;
+        margin-right: 10px;
+        @include flex(row, center, center);
+        &.mobile {
+            display: none;
+        }
+    }
+    .user-menu {
+        align-self: flex-end;
+    }
+    .menu-ul {
+        margin: 28px 0 10px 10px;
+    }
+    .menu-li {
+        &+.menu-li {
+            margin-left: 30px;
+        }
+    }
+    @media only screen and (max-width: 776px) {
+        min-height: 60px;
+        .container {
+            align-items: center;
+        }
+        .user-wrap,
+        .locked-li {
+            display: none;
+        }
+        .user-figure {
+            width: 32px;
+            height: 32px;
+            img {
+                width: 80%;
+            }
+            &.mobile {
+                display: flex;
+            }
+        }
+        .user-menu {
+            align-self: center;
+        }
+        .menu-ul {
+            margin: 0;
+        }
+        .menu-li+.menu-li {
+            margin-left: 10px;
+        }
+    }
+}

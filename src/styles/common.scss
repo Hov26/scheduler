@@ -39,6 +39,7 @@ textarea::placeholder {
     }
     &.arrow-bottom {
         transform: rotate(90deg);
+        background-size: 8px;
     }
 }
 

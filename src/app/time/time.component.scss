@@ -1,6 +1,6 @@
 @import '../../styles/uiLib/colors.scss';
 .time-wrapper {
-    margin-left: 60px;
+    margin-left: 4vw;
 }
 
 .time-head {
@@ -26,5 +26,11 @@
     &.active,
     &:hover {
         background-color: $primaryBlue100;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .time-wrapper {
+        margin: 30px 0 0 0;
     }
 }

@@ -3,6 +3,7 @@
 .calendar-component {
     width: 100%;
     max-width: 294px;
+    min-width: 294px;
 }
 
 .calendar-head {
@@ -16,44 +17,39 @@
 
 .calendar-ul {
     flex-wrap: wrap;
-    &.dates {
-        .calendar-li {
-            position: relative;
-            z-index: 2;
-            color: $gray300;
+    .calendar-li {
+        position: relative;
+        z-index: 2;
+        color: $gray300;
+        transition: all 0.1s ease;
+        cursor: pointer;
+        min-width: 42px;
+        padding: 8px 5px;
+        @include flex(row, center, center);
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $primaryBlue100;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            z-index: -1;
+            opacity: 0;
             transition: all 0.1s ease;
+        }
+        &.active,
+        &:hover {
+            color: $white;
             &:after {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: $primaryBlue100;
-                border-radius: 50%;
-                cursor: pointer;
-                width: 32px;
-                height: 32px;
-                z-index: -1;
-                opacity: 0;
-                transition: all 0.1s ease;
-            }
-            &.active,
-            &:hover {
-                color: $white;
-                &:after {
-                    opacity: 1;
-                }
-            }
-            &.disabled {
-                color: $gray200;
+                opacity: 1;
             }
         }
+        &.disabled {
+            color: $gray200;
+        }
     }
-}
-
-.calendar-li {
-    min-width: 42px;
-    // height: 42px;
-    padding: 8px 5px;
-    @include flex(row, center, center);
 }
