@@ -37,7 +37,7 @@
     </header>
     <section class="content">
         <div class="container">
-            <app-notification></app-notification>
+            <app-notification className="blue"></app-notification>
             <h1 class="fz38 gray400 fw700 text-center main-title">Welcome back, Ton!</h1>
             <h2 class="fz24 gray400 fw400 text-center">Please choose a date, time, and message.</h2>
             <div class="calendar-form-wrapper">
@@ -49,8 +49,8 @@
                     <form action="" class="form">
                         <div class="form-group">
                             <label for="project" class="label fz16 fw400 white">Subject *</label>
-                            <app-input></app-input>
-                            <label for="message" class="label fz16 fw400 white">Subject *</label>
+                            <app-input id="project"></app-input>
+                            <label for="message" class="label fz16 fw400 white">Message *</label>
                             <app-textarea></app-textarea>
                         </div>
                     </form>

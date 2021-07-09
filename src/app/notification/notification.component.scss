@@ -5,13 +5,13 @@
     width: 95%;
     max-width: 320px;
     border-radius: 30px;
-    @include flex(space-between, center);
+    @include flex(row, space-between, center);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     &.blue {
         @include bg-opacity($primaryBlue100, 0.4);
         .icon-container {
             background-color: $primaryBlue100;
-            background-image: url('../assets/notification.svg');
+            background-image: url('../../assets/notification.svg');
         }
     }
     &.green {
@@ -19,7 +19,7 @@
         0.4);
         .icon-container {
             background-color: $green;
-            background-image: url('../assets/done.svg');
+            background-image: url('../../assets/done.svg');
         }
     }
     &.red {
@@ -27,7 +27,7 @@
         0.4);
         .icon-container {
             background-color: $red;
-            background-image: url('../assets/warning.svg');
+            background-image: url('../../assets/warning.svg');
         }
     }
     .icon-container {
