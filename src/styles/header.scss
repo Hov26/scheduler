@@ -34,6 +34,21 @@
             margin-left: 30px;
         }
     }
+    .menu-li-a {
+        position: relative;
+    }
+    .notification-count {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        border-radius: 50%;
+        background-color: $red;
+        text-align: center;
+        color: $white;
+        position: absolute;
+        top: -14px;
+        right: -8px;
+    }
     @media only screen and (max-width: 776px) {
         min-height: 60px;
         .container {
