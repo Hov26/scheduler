@@ -1,7 +1,9 @@
 html,
 button,
 input,
-textarea {
+input::placeholder,
+textarea,
+textarea::placeholder {
     font-family: 'Lato', sans-serif;
 }
 

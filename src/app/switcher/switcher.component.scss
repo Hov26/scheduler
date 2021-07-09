@@ -8,6 +8,9 @@
     position: relative;
     cursor: pointer;
     transition: all 0.1s linear;
+    &:focus {
+        outline: 2px solid $primaryBlue200;
+    }
     &:after {
         content: '';
         display: block;

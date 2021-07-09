@@ -85,7 +85,7 @@
     center,
     center);
     &:after {
-        @include whiteOverlay(30vh,
+        @include whiteOverlay(45vh,
         -1);
     }
     .notification-wrap {
@@ -109,8 +109,10 @@
             @include whiteOverlay(100px,
             1);
         }
-        &:hover &:after {
-            opacity: 0;
+        &:hover {
+            &:after {
+                display: none;
+            }
         }
     }
     .form-wrapper {
